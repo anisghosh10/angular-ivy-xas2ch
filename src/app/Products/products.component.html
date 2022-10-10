@@ -1,6 +1,6 @@
-<p>Please select the products</p>
+<p class="head1">Please select the products</p>
 <form #productForm="ngForm" (ngSubmit)="onProductSubmit(productForm)">
-  <div class="select" style="width:200px;">
+  <div class="list">
     <select
       type="text"
       #name="ngModel"
@@ -8,24 +8,28 @@
       [(ngModel)]="selectedItem"
       multiple
     >
-      <option value="American">American flamingo</option>
-      <option value="Andean">Andean flamingo</option>
-      <option value="Chilean">Chilean flamingo</option>
-      <option value="Greater">Greater flamingo</option>
-      <option value="James's">James's flamingo</option>
-      <option value="Lesser">Lesser flamingo</option>
-      <option value="Greater">Greater flamingo</option>
-      <option value="James's">James's flamingo</option>
-      <option value="Lesser">Lesser flamingo</option>
+      <option value="Apples - $0.8">Apples - $0.8</option>
+      <option value="Bananas - $1/Dozen">Bananas - $1/Dozen</option>
+      <option value="Mango - $1.2">Mango - $1.2</option>
+      <option value="Peach - $0.8">Peach - $0.8</option>
+      <option value="Watermelon - $1.5">Watermelon - $1.5</option>
+      <option value="Kiwi - $0.8">Kiwi - $0.8</option>
+      <option value="Oranges - $0.9">Oranges - $0.9</option>
+      <option value="Grapes - $2.0">Grapes - $2.0</option>
+      <option value="Pineapple - $2.5">Pineapple - $2.5</option>
     </select>
   </div>
   <button
-    routerLink="/summary"
-    style="position: relative;left: 80px;top: 20px;font-family: cursive;"
+    style="color: green;font-family: cursive;left:200px;top:10px;position: relative;"
     type="submit"
   >
     Submit
   </button>
+  <button
+    routerLink="/products"
+    style="color: green;font-family: cursive;left:200px;top:10px;position: relative;"
+    type="next"
+  >
+    Next
+  </button>
 </form>
-
-<router-outlet></router-outlet>
