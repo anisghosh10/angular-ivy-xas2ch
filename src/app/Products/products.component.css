@@ -8,6 +8,8 @@ option {
   padding-right: 70px;
   padding-top: 3px;
   align-items: center;
+  font-family: monospace;
+  font-weight: bold;
 }
 .head1 {
   font-family: fantasy;
@@ -19,17 +21,115 @@ button {
 }
 .bt{
   color: green;
-  font-family: cursive;
-  left:200px;
+  font-family: fantasy;
+  left:170px;
+  top:10px;
+  position: relative;
+  
+}
+.bt1{
+  color: green;
+  font-family: fantasy;
+  left:190px;
+  top:10px;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bt2{
+  color: green;
+  font-family: fantasy;
+  left:170px;
   top:10px;
   position: relative;
   margin-right: 20px;
 }
-.bt1{
-  color: green;
-  font-family: cursive;
-  left:200px;
-  top:10px;
-  position: relative;
+.bt:hover {
+  transition-duration: 0.1s;
+  background-color: #3a3a3a;
 }
 
+.bt:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.bt:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.bt:active {
+  top: 1px;
+}
+.bt1:hover {
+  transition-duration: 0.1s;
+  background-color: #3a3a3a;
+}
+
+.bt1:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.bt1:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.bt2:hover {
+  transition-duration: 0.1s;
+  background-color: #3a3a3a;
+}
+
+.bt2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.bt2:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
