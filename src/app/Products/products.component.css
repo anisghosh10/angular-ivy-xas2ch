@@ -17,4 +17,19 @@ option {
 button {
   padding: 3px;
 }
+.bt{
+  color: green;
+  font-family: cursive;
+  left:200px;
+  top:10px;
+  position: relative;
+  margin-right: 20px;
+}
+.bt1{
+  color: green;
+  font-family: cursive;
+  left:200px;
+  top:10px;
+  position: relative;
+}
 
