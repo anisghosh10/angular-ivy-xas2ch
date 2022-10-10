@@ -1,4 +1,4 @@
-<p>Please select the language your are intreasted in</p>
+<p>Please select the products</p>
 <form #productForm="ngForm" (ngSubmit)="onProductSubmit(productForm)">
   <div class="select" style="width:200px;">
     <select
@@ -6,17 +6,26 @@
       #name="ngModel"
       name="selectedItem"
       [(ngModel)]="selectedItem"
+      multiple
     >
-      <option>C</option>
-      <option>Java</option>
-      <option>Python</option>
-      <option>R</option>
+      <option value="American">American flamingo</option>
+      <option value="Andean">Andean flamingo</option>
+      <option value="Chilean">Chilean flamingo</option>
+      <option value="Greater">Greater flamingo</option>
+      <option value="James's">James's flamingo</option>
+      <option value="Lesser">Lesser flamingo</option>
+      <option value="Greater">Greater flamingo</option>
+      <option value="James's">James's flamingo</option>
+      <option value="Lesser">Lesser flamingo</option>
     </select>
   </div>
   <button
+    routerLink="/summary"
     style="position: relative;left: 80px;top: 20px;font-family: cursive;"
     type="submit"
   >
     Submit
   </button>
 </form>
+
+<router-outlet></router-outlet>
