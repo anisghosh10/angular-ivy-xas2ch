@@ -14,7 +14,7 @@ option {
 .head1 {
   font-family: fantasy;
   text-align: center;
-  font-size: x-large;
+  font-size: xx-large;
 }
 button {
   padding: 3px;
@@ -133,6 +133,8 @@ button {
   opacity: 1;
   transition: 0s;
 }
-select{
-  
+.head2{
+  font-family: monospace;
+  font-weight: bold;
+  font-style: italic;
 }
