@@ -8,12 +8,15 @@ label {
   padding-left: 25%;
   padding-top: 10px;
   font-family: fantasy;
+  
 }
 p {
   text-align: center;
   font-family: fantasy;
   font-size: x-large;
   padding: 3px;
+  background-color: #04aa6db9;
+  border: 2px solid #04AA6D;
 }
 .bt {
   color: green;

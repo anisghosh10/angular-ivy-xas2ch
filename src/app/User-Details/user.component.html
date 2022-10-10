@@ -1,37 +1,30 @@
 <div>
-  <p >Please enter the User Details</p>
+  <p>Please enter the User Details</p>
   <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
-    <label for="name" >Name:&nbsp;&nbsp;&nbsp;&nbsp; </label>
+    <label for="name">Name :&nbsp;&nbsp;&nbsp;&nbsp; </label>
     <input
       type="text"
       #name="ngModel"
       name="fisrtname"
       [(ngModel)]="fisrtname"
     /><br />
-    <label for="name"
-      >Address: &nbsp;&nbsp;&nbsp;&nbsp;
-    </label>
+    <label for="name">Address : &nbsp;&nbsp;&nbsp;&nbsp; </label>
     <input
       type="text"
       #name="ngModel"
       name="address"
       [(ngModel)]="address"
     /><br />
-    <label for="name">Mobile:&nbsp;&nbsp;&nbsp;&nbsp; </label>
+    <label for="name">Mobile :&nbsp;&nbsp;&nbsp;&nbsp; </label>
     <input
       type="text"
       #name="ngModel"
       name="mobile"
       [(ngModel)]="mobile"
     /><br />
-    <label for="name" >Email:&nbsp;&nbsp;&nbsp;&nbsp; </label>
+    <label for="name">Email :&nbsp;&nbsp;&nbsp;&nbsp; </label>
     <input type="text" #name="ngModel" name="email" [(ngModel)]="email" /><br />
-    <button class="bt"
-      type="submit"
-    >
-      Submit
-    </button>
-    <button class="bt1" routerLink="/products"
-    type="next">Next</button>
+    <button class="bt" type="submit">Submit</button>
+    <button class="bt1" routerLink="/products" type="next">Next</button>
   </form>
 </div>
